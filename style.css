@@ -119,11 +119,45 @@ header {
     transform: translateY(-10px);
 }
 
-
+/* Ensure columns take up equal space */
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer .col-md-4 {
+    flex: 1;
+    margin: 0 10px; /* Adjust margin as needed */
+  }
+  
+  /* Add padding and margin to ensure enough spacing */
+  .footer .col-12 {
+    padding: 10px 0; /* Adjust padding as needed */
+  }
+  
+  /* Additional styles for better appearance */
+  .footer .navbar-brand {
+    margin-bottom: 20px;
+  }
+  
+  .footer h4 {
+    margin-bottom: 20px;
+  }
+  
+  .footer p {
+    margin-bottom: 20px;
+  }
+  
+#scrollUpButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 1000;  
+}
 ul, li {
     padding-left: 0;
   }
-  
   .check {
     width: 32px;
     height: 32px;
